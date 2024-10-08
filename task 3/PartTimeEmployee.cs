@@ -8,8 +8,8 @@ namespace task_3
 {
     internal class PartTimeEmployee
     {
-        public string Name { get; }
-        public int WeeklyHours { get; } = 20;
+        public string Name { get; set; }
+        public int WeeklyHours { get; set; } = 20;
 
         public PartTimeEmployee(string name)
         {

@@ -8,8 +8,8 @@ namespace task_3
 {
     internal class StandardEmployee
     {
-        public string Name { get; }
-        public int WeeklyHours { get; } = 40;
+        public string Name { get; set; }
+        public int WeeklyHours { get; set; } = 40;
         public StandardEmployee(string name)
         {
             Name = name;
