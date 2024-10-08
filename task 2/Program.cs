@@ -39,7 +39,7 @@ class Task
             else if (commands[0] == "Attack" && commands[1] == "King") king.Attack();
             else if (commands[0] == "Kill")
             {
-                for (int i = footMan.Count - 1; i >= 0; i--)
+                for (int i = 0; i < footMan.Count; i++)
                 {
                     if (footMan[i].Name == commands[1])
                     {
@@ -47,7 +47,7 @@ class Task
                         footMan.RemoveAt(i);
                     }
                 }
-                for (int i = royalGuards.Count - 1; i >= 0; i--)
+                for (int i = 0; i < royalGuards.Count; i++)
                 {
                     if (royalGuards[i].Name == commands[1])
                     {
