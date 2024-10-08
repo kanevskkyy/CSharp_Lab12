@@ -55,7 +55,13 @@ namespace DispatcherExample
             while ((input = Console.ReadLine()) != "End")
             {
                 dispatcher.Name = input;
+                Line();
             }
+        }
+
+        public static void Line()
+        {
+            Console.WriteLine("=======================================");
         }
     }
 }
